@@ -3,7 +3,7 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
     return( <nav className='navbar navbar-expand-lg'>
-                <div className='logoDiv'><img src="/src/assets/logo.png" alt="" /></div>
+                <div className='logoDiv'><img src="/assets/logo.png" alt="" /></div>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
                 </button>

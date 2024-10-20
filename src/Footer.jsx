@@ -8,7 +8,7 @@ export default function Footer() {
             <div className='footer'>
             <div className='socailLogo'>
                 <div className='socailItems'>
-                <img src="/src/assets/logo.png" alt="LOGO" />
+                <img src="/assets/logo.png" alt="LOGO" />
                 <div className='contactIcons'>
                     <FontAwesomeIcon icon={faFacebook} />
                     <FontAwesomeIcon icon={faInstagram} />

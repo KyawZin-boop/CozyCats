@@ -9,7 +9,7 @@ export default function Feedback() {
             <div className="feedbackCard">
             <div className='card shadow'>
                 <div className='card-body'>
-                <img src="/src/assets/feedbackImg1.jpg" className="d-block w-100" alt="..." />
+                <img src="/assets/feedbackImg1.jpg" className="d-block w-100" alt="..." />
                 <p className='name'>Chris & Tom</p>
                 <p className='feedbackInfo'>Amazing Products & Delievery On Time</p>
                 <div className="price">
@@ -26,7 +26,7 @@ export default function Feedback() {
             </div>
             <div className='card shadow'>
                 <div className='card-body'>
-                <img src="/src/assets/feedbackImg2.webp" className="d-block w-100" alt="..." />
+                <img src="/assets/feedbackImg2.webp" className="d-block w-100" alt="..." />
                 <p className='name'>Selena & Tobby</p>
                 <p className='feedbackInfo'>Leave The Overall Shipping Experience</p>
                 <div className="price">
@@ -43,7 +43,7 @@ export default function Feedback() {
             </div>
             <div className='card shadow'>
                 <div className='card-body'>
-                <img src="/src/assets/feedbackImg3.jpg" className="d-block w-100" alt="..." />
+                <img src="/assets/feedbackImg3.jpg" className="d-block w-100" alt="..." />
                 <p className='name'>Jane & Katy</p>
                 <p className='feedbackInfo'>The Great Service</p>
                 <div className="price">

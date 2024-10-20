@@ -21,7 +21,7 @@ export default function Adoption() {
                 </button>
                 <div className='card shadow'>
                   <div className='card-body'>
-                    <img src="/src/assets/munchkin-kitten.jpg" className="d-block w-100" alt="..." />
+                    <img src="/assets/munchkin-kitten.jpg" className="d-block w-100" alt="..." />
                     <p className='catName'>Munchkin</p>
                     <p className='catAge'>One Month Old</p>
                     <button className='adoptBtn shadow-sm'>Adopt <FontAwesomeIcon icon={faAngleRight} className='fs-4 align-middle'/></button>
@@ -29,7 +29,7 @@ export default function Adoption() {
                 </div>
                 <div className='card shadow'>
                   <div className='card-body'>
-                    <img src="/src/assets/persian.jpg" className="d-block w-100" alt="..." />
+                    <img src="/assets/persian.jpg" className="d-block w-100" alt="..." />
                     <p className='catName'>Persian</p>
                     <p className='catAge'>Five Month Old</p>
                     <button className='adoptBtn shadow-sm'>Adopt <FontAwesomeIcon icon={faAngleRight} className='fs-4 align-middle'/></button>
@@ -37,7 +37,7 @@ export default function Adoption() {
                 </div>
                 <div className='card shadow'>
                   <div className='card-body'>
-                    <img src="/src/assets/Ragdoll.jpg" className="d-block w-100" alt="..." />
+                    <img src="/assets/Ragdoll.jpg" className="d-block w-100" alt="..." />
                     <p className='catName'>Ragdoll</p>
                     <p className='catAge'>Six Month Old</p>
                     <button className='adoptBtn shadow-sm'>Adopt <FontAwesomeIcon icon={faAngleRight} className='fs-4 align-middle'/></button>
@@ -57,7 +57,7 @@ export default function Adoption() {
                   </button>
                   <div className='card shadow'>
                     <div className='card-body'>
-                      <img src="/src/assets/SiberianCat.jfif" className="d-block w-100" alt="..." />
+                      <img src="/assets/SiberianCat.jfif" className="d-block w-100" alt="..." />
                       <p className='catName'>Siberian</p>
                       <p className='catAge'>Six Month Old</p>
                       <button className='adoptBtn shadow-sm'>Adopt <FontAwesomeIcon icon={faAngleRight} className='fs-4 align-middle'/></button>
@@ -65,7 +65,7 @@ export default function Adoption() {
                   </div>
                   <div className='card shadow'>
                     <div className='card-body'>
-                      <img src="/src/assets/britishLonghairCat.jfif" className="d-block w-100" alt="..." />
+                      <img src="/assets/britishLonghairCat.jfif" className="d-block w-100" alt="..." />
                       <p className='catName'>British Longhair</p>
                       <p className='catAge'>Five Month Old</p>
                       <button className='adoptBtn shadow-sm'>Adopt <FontAwesomeIcon icon={faAngleRight} className='fs-4 align-middle'/></button>
@@ -73,7 +73,7 @@ export default function Adoption() {
                   </div>
                   <div className='card shadow'>
                     <div className='card-body'>
-                      <img src="/src/assets/northweiganCat.jfif" className="d-block w-100" alt="..." />
+                      <img src="/assets/northweiganCat.jfif" className="d-block w-100" alt="..." />
                       <p className='catName'>North Weigan</p>
                       <p className='catAge'>Nine Month Old</p>
                       <button className='adoptBtn shadow-sm'>Adopt <FontAwesomeIcon icon={faAngleRight} className='fs-4 align-middle'/></button>
