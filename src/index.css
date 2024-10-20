@@ -1,0 +1,792 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: white;
+}
+nav{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: #ffffff;
+  color: black;
+}
+nav .logoDiv{
+  width: 40%;
+  text-align: center;
+}
+nav .logoDiv img{
+  height: 70px;
+}
+.navLinks{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .navLinks .mobileSearch{
+  display: none;
+}
+nav a{
+  color: black;
+  font-size: 24px;
+  font-family: "Crimson Pro", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+.homeContainer{
+  background-image: url(/src/assets/home\ bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 30px 0;
+}
+.homeContent{
+  padding: 140px 250px;
+  min-height: 70vh;
+  overflow: hidden;
+}
+.homeContent img{
+  float: right;
+  width: 480px;
+  height: 400px;
+  border-radius: 61% 39% 33% 67% / 59% 31% 69% 41%;
+  object-fit: cover;
+  margin-left: 40px;
+  shape-outside: ellipse(61% 39% 33% 67% at 50% 50%);
+  clip-path: ellipse(61% 39% 33% 67% at 50% 50%);
+}
+.homeContent h1{
+  font-family: 'Coiny', Courier, monospace;
+  font-weight: bold;
+  color: #66999b;
+  text-shadow: 2px 2px 2px #cccbcb;
+}
+.homeContent p{
+  font-size: 20px;
+  font-family: "Crimson Pro",sans-serif;
+  margin: 20px 0;
+}
+.homeContent button{
+  float: right;
+  margin-right: 100px;
+  margin-top: 25px;
+  padding: 20px 35px;
+  text-align: center;
+  font-family: "Crimson Pro", sans-serif;
+  font-size: 28px;
+  border: none;
+  background-color: #fcb1af;
+  color: white;
+  border-radius: 50px;
+}
+.homeContent button:hover{
+  background-color: #fe9490;
+}
+
+.adoptionContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+.adoptionContainer h1{
+  font-family: 'Coiny', Courier, monospace;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #66999b;
+  text-shadow: 2px 2px 2px #cccbcb;
+}
+.adoptionContainer h2{
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+  color: #fcb1af;
+}
+.adoptionContainer p{
+  width: 34%;
+  text-align: center;
+  font-family: "Crimson Pro", sans-serif;
+  font-size: 21px;
+}
+.carouselItems{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+.carouselItems .card{
+  border: none;
+  margin: 20px;
+  min-width: 360px;
+  border-radius: 20px;
+}
+.carouselItems .card-body{
+  padding: 0;
+  width: 360px;
+  background-color: #f7f6f6;
+  border-radius: 20px;
+}
+.carouselItems .card-body p{
+  width: 100%;
+  text-align: center;
+}
+.carouselItems .catName{
+  font-family: "Coiny", Courier, monospace;
+  font-weight: 400;
+  font-size: 36px;
+  margin-bottom: 0;
+  margin-top: 15px;
+  color: #66999b;
+}
+.carouselItems .catAge{
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+.carouselItems img{
+  min-width: 360px;
+  max-width: 360px;
+  height: 328px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.carouselItems .adoptBtn{
+  float: right;
+  padding: 8px 18px;
+  text-align: center;
+  font-family: "Crimson Pro", sans-serif;
+  font-size: 21px;
+  border: none;
+  background-color: #fcb1af;
+  color: white;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  margin-right: 20px;
+}
+.carouselItems .adoptBtn:hover{
+  background-color: #fe9490;
+}
+
+.serviceDiv{
+  background-color: #fcb1af;
+}
+.serviceDiv h1{
+  font-family: 'Coiny', Courier, monospace;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+  padding-top: 60px;
+  color: #66999b;
+  text-shadow: 2px 2px 2px #fffefe;
+}
+.serviceDiv h4{
+  font-family: "Jost", sans-serif;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 50px;
+  color: white;
+}
+.serviceDiv .cardContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.serviceDiv .cardContainer .card{
+  margin: 20px;
+  border-radius: 12px;
+  background-color: #f7f6f6;
+}
+.serviceDiv .cardContainer .card .card-body .icon{
+  width: 160px;
+  height: 160px;
+  padding: 20px 30px;
+  color: #66999b;
+}
+.serviceDiv .cardContainer .card .card-body p{
+  text-align: center;
+  font-family: "Coiny", Courier, monospace;
+  color: #fcb1af;
+  font-size: 26px;
+}
+.serviceDiv .helpYou{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0 50px 0;
+}
+.serviceDiv .helpYou .helpText h3{
+  font-family: 'Jost', Courier, monospace;
+  font-weight: bold;
+  font-size: 26px;
+  color: white;
+}
+.serviceDiv .helpYou .helpText p{
+  font-family: "Crimson Pro", sans-serif;
+  font-size: 20px;
+  width: 450px;
+  text-align: center;
+}
+.serviceDiv .helpYou .helpText button{
+  float: right;
+  margin-top: 25px;
+  padding: 15px 35px;
+  text-align: center;
+  font-family: "Crimson Pro", sans-serif;
+  font-size: 28px;
+  border: none;
+  background-color: white;
+  color: #fcb1af;
+  border-radius: 52px;
+}
+.serviceDiv .helpYou .helpText button:hover{
+  transform: scale(1.05);
+  transition: 0.5s ease;
+}
+.serviceDiv .helpYou .helpText{
+  margin: 0 20px 0 450px;
+}
+.serviceDiv .helpYou .helpImages{
+  position: relative;
+  margin-left: 20px;
+  flex: 1;
+}
+.helpImage1{
+  border: 7px solid #66999b;
+  width: 248px;
+  height: 312px;
+  border-radius: 50px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+.helpImage2{
+  position: absolute;
+  border: 7px solid #66999b;
+  width: 230px;
+  height: 219px;
+  border-radius: 50px;
+  object-fit: cover;
+  left: 230px;
+  top: 40px;
+}
+.helpImage3{
+  position: absolute;
+  border: 7px solid #66999b;
+  width: 180px;
+  height: 170px;
+  border-radius: 50px;
+  object-fit: cover;
+  left: 430px;
+  top: 65px;
+}
+
+.galleryDiv{
+  text-align: center;
+}
+.galleryDiv h1{
+  font-family: 'Coiny', Courier, monospace;
+  font-size: 50px;
+  margin: 60px 0 30px 0;
+  color: #66999b;
+  text-shadow: 2px 2px 2px #cccbcb;
+}
+.galleryDiv h4{
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  margin-bottom: 60px;
+  color: #fcb1af;
+}
+.galleryImg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 150px;
+}
+.galleryImg img{
+  width: 340px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50px;
+  margin: 10px;
+  flex: 1 1 calc(33.33% - 20px);
+}
+.galleryImg img:hover{
+  transform: scale(1.02);
+  transition: 0.5s ease;
+}
+.galleryDiv .galleryBtn{
+  text-align: end;
+}
+.galleryDiv button{
+  margin: 25px 160px 30px 0;
+  padding: 15px 35px;
+  text-align: center;
+  font-family: "Crimson Pro", sans-serif;
+  font-size: 28px;
+  border: none;
+  background-color: #fcb1af;
+  color: white;
+  border-radius: 52px;
+}
+.galleryDiv button:hover{
+  background-color: #fe9490;
+}
+
+.productDiv{
+  margin-top: 10px;
+  background-color: #f7f6f6;
+  padding: 60px 0;
+}
+.productDiv h1{
+  font-family: 'Coiny', Courier, monospace;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #66999b;
+  text-shadow: 2px 2px 2px #cccbcb;
+}
+.productCard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.productCard .card{
+  margin: 10px;
+  width: 340px;
+  border-radius: 50px;
+  background-color: #fcb1af;
+}
+.productCard .card-body{
+  padding: 0;
+  text-align: center;
+}
+.productCard .card-body img{
+  width: 340px;
+  height: 271px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+.productCard .card-body img:hover{
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+.productCard .card-body p{
+  font-family: "Jost", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+.productCard .card-body .price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+.productCard .card-body .price span{
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+}
+.productCard .card-body .price button{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  font-family: "Crimson Pro", sans-serif;
+  font-size: 21px;
+  color: #fcb1af;
+}
+.productCard .card-body .price button:hover{
+  transform: scale(1.03);
+  transition: 0.5s ease;
+}
+.productDiv .seeAllBtn{
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  text-align: end;
+  display: block;
+  width: 100%;
+  border: none;
+  color: #fcb1af;
+  background-color: #f7f6f6;
+  padding-right: 350px;
+  margin-top: 30px;
+}
+.productDiv .seeAllBtn:hover{
+  text-shadow: 2px 2px 2px #cccbcb;
+}
+
+.feedback{
+  text-align: center;
+  padding: 60px 0;
+}
+.feedback h1{
+  font-family: "Coiny", Courier, monospace;
+  font-size: 50px;
+  margin-bottom: 60px;
+  color: #66999b;
+  text-shadow: 2px 2px 2px #cccbcb;
+}
+.feedbackCard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.feedbackCard .card{
+  margin: 10px;
+  width: 340px;
+  border: none;
+  border-radius: 50px;
+}
+.feedbackCard .card:hover{
+  transform: scale(1.02);
+  transition: 0.3s ease;
+}
+.feedbackCard .card-body{
+  background-color: #66999b;
+  border-radius: 50px;
+  padding: 0;
+}
+.feedbackCard .card-body img{
+  width: 340px;
+  height: 251px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+.feedbackCard .card-body p{
+  font-family: "Jost", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+}
+.feedbackCard .card-body .feedbackInfo{
+  font-family: "Crimson Pro", sans-serif;
+  padding:  0 10px;
+  min-height: 70px;
+  font-size: 21px;
+  color: white;
+}
+.feedbackCard .price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px 20px;
+}
+.feedbackCard .iconDiv{
+  color: #fcb1af;
+}
+.feedbackCard .iconDiv .boneIcon{
+  margin: 5px;
+}
+.feedbackCard .price span{
+  font-family: "Crimson Pro", sans-serif;
+  font-size: 21px;
+  color: white;
+}
+.feedback .viewFeedbackBtn{
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  border: none;
+  color: white;
+  background-color: hsla(182, 21%, 50%, 0.9);
+  padding: 15px 20px;
+  border-radius: 50px;
+  margin: 30px 0 80px;
+}
+.feedback .viewFeedbackBtn:hover{
+  background-color: #66999b;
+}
+.feedback .emailCard{
+  border-radius: 30px;
+  background-color: #fcb1af;
+  display: inline-block;
+  padding: 40px 100px 70px;
+}
+.feedback .emailCard h1{
+  color: white;
+  text-shadow: 2px 2px 2px #000000b7;
+}
+.feedback .emailCard .emailSender{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feedback .emailCard .emailSender .emailIcon{
+  font-size: 60px;
+}
+.feedback .emailCard .emailSender input{
+  border: none;
+  border-radius: 8px;
+  padding: 12px 60px;
+  width: 477px;
+  margin: 0 80px;
+  font-family: "Crimson Pro", sans-serif;
+  font-size: 21px;
+}
+.feedback .emailCard .emailSender button{
+  font-family: "Crimson Pro", sans-serif;
+  font-size: 22px;
+  border: none;
+  color: #fcb1af;
+  background-color: #f7f6f6;
+  padding: 12px 20px;
+  border-radius: 50px;
+}
+.feedback .emailCard .emailSender button:hover{
+  background-color: #fe9490;
+  color: white;
+}
+
+.footerDiv .footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f7f6f6;
+  padding: 20px 0;
+}
+.footerDiv .footer .socailLogo{
+  width: 30%;
+  text-align: end;
+}
+.footerDiv .footer .socailItems{
+  width: 180px;
+  display: inline-block;
+}
+.footerDiv .footer .contactIcons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 26px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.footerDiv .footer .footerLinks{
+  display: flex;
+  width: 70%;
+  justify-content: center;
+}
+.footerDiv .footer .footerLinks h2{
+  color: #fcb1af;
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+.footerDiv .footer .footerLinks a{
+  text-decoration: none;
+  color: #66999b;
+  margin-bottom: 20px;
+  font-size: 21px;
+}
+.footerDiv .footer .footerLinks p{
+  color: #66999b;
+  font-size: 21px;
+  margin-bottom: 20px;
+  width: 296px;
+}
+.footerDiv .footerLinks .pagesLink, .footerDiv .footerLinks .companyLinks, .footerDiv .footerLinks .contact{
+  margin: 20px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media screen and (max-width: 1700px) {
+  .serviceDiv .helpYou .helpText{
+    margin: 0 20px 0 250px;;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .serviceDiv .helpYou .helpText{
+    margin: 0 20px 0 150px;;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .carouselItems .card{
+    margin: 7px;
+    min-width: 280px;
+  }
+  .carouselItems .card-body, .carouselItems .card-body img{
+    max-width: 280px;
+    min-width: 280px;
+  }
+  .carouselItems .card-body img{
+    height: 250px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  nav .logoDiv{
+    width: 20%;
+  }
+  .serviceDiv .helpYou{
+    flex-direction: column;
+  }
+  .serviceDiv .helpYou .helpText{
+    text-align: center;
+    margin: 0;
+  }
+  .serviceDiv .helpYou .helpText button{
+    float: none;
+  }
+  .serviceDiv .helpYou .helpImages{
+    flex: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .helpImage1, .helpImage2, .helpImage3{
+    position: relative;
+    width: 248px;
+    height: 312px;
+    top: 0;
+    left: 0;
+    margin: 20px;
+  }
+  .feedback .emailCard{
+    padding: 40px 50px 70px;
+  }
+  .footerDiv .footerLinks .pagesLink, .footerDiv .footerLinks .companyLinks, .footerDiv .footerLinks .contact{
+    margin: 20px 20px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .homeContent button{
+    margin-right: 0;
+    float: none;
+  }
+  .carouselItems .card{
+    margin: 5px;
+  }
+  .carouselItems button{
+    display: none;
+  }
+  .feedback .emailCard .emailSender{
+    flex-direction: column;
+  }
+  .feedback .emailCard .emailSender input{
+    margin: 0;
+  }
+  .feedback .emailCard .emailSender input, .feedback .emailCard .emailSender button, .feedback .emailCard .emailSender .emailIcon{
+    margin: 20px 0;
+  }
+  .footerDiv .footer{
+    flex-direction: column;
+    background-color: #f7f6f6;
+    padding: 20px 0;
+  }
+  .footerDiv .footer .socailLogo{
+    text-align: center;
+  }
+}
+@media screen and (max-width: 990px) {
+  nav .navbar-toggler{
+    margin-right:  30px;
+  }
+  nav .logoDiv{
+    margin-left: 30px;
+  }
+  nav .navLinks{
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 30px;
+    transition: all 0.5s ease;
+  }
+  nav .navLinks a{
+    font-size: 18px;
+    margin-bottom: 2px;
+  }
+  nav .navLinks .search{
+    display: none;
+  }
+  nav .navLinks .mobileSearch{
+    display: block;
+  }
+  nav .navLinks .mobileSearch input{
+    border-radius: 7px;
+    margin-right: 20px;
+    padding: 3px 10px;
+    margin-top: 3px;
+  }
+  nav .navLinks .mobileSearch button{
+    border-radius: 7px;
+    padding: 4px 10px;
+    background-color: #fcb1af;
+    color: white;
+    font-size: 18px;
+    border: none;
+    font-family: "Crimson Pro", sans-serif;
+  }
+}
+@media screen and (max-width: 900px) {
+  .homeContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+  }
+  .homeContent img{
+    float: none;
+    margin: 0;
+  }
+  .carouselItems{
+    flex-direction: column;
+  }
+  .galleryDiv button{
+    float: none;
+    margin: 25px auto;
+  }
+  .productDiv .seeAllBtn{
+    padding-right: 0;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  .adoptionContainer p, .adoptionContainer h2{
+    width: 100%;
+    padding: 0 20px;
+  }
+  .footerDiv .footer .footerLinks{
+    width: 100%;
+  }
+  .footerDiv .footerLinks .pagesLink h2, .footerDiv .footerLinks .companyLinks h2, .footerDiv .footerLinks .contact h2{
+    font-size: 24px;
+  }
+  .footerDiv .footerLinks .pagesLink a, .footerDiv .footerLinks .companyLinks a, .footerDiv .footerLinks .contact p{
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .serviceDiv .helpYou .helpText p{
+    width: auto;
+  }
+  .feedback .emailCard{
+    padding: 40px 30px 70px;
+  }
+  .feedback .emailCard h1{
+    font-size: 26px;
+  }
+  .feedback .emailCard .emailSender input{
+    padding: 5px 10px;
+    width: 100%;
+  }
+  .footerDiv .footerLinks{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .footerDiv .footer .socailLogo{
+    width: 100%;
+    text-align: center;
+  }
+}
