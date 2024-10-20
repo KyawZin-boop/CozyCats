@@ -8,12 +8,12 @@ export default function Navbar() {
                 <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="navLinks collapse navbar-collapse" id="navbarTogglerDemo02">
-                <a href="home">Home</a>
-                <a href="#">Adoption</a>
-                <a href="#">Services</a>
-                <a href="#">Gallery</a>
-                <a href="#">Products</a>
-                <a href="#">FAQ</a>
+                <a href="#home">Home</a>
+                <a href="#adoption">Adoption</a>
+                <a href="#service">Services</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#product">Products</a>
+                <a href="#feedback">FAQ</a>
                 <div className='search ms-3'>
                     <FontAwesomeIcon icon={faMagnifyingGlass} className='fs-4'/>
                 </div>

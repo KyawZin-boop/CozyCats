@@ -22,7 +22,7 @@ nav .logoDiv{
 nav .logoDiv img{
   height: 70px;
 }
-.navLinks{
+nav .navLinks{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,13 +30,16 @@ nav .logoDiv img{
 nav .navLinks .mobileSearch{
   display: none;
 }
-nav a{
+nav .navLinks a{
   color: black;
   font-size: 24px;
   font-family: "Crimson Pro", sans-serif;
   font-weight: 400;
   text-decoration: none;
   margin-right: 30px;
+}
+nav .navLinks .search{
+  cursor: pointer;
 }
 
 .homeContainer{
@@ -697,7 +700,7 @@ nav a{
   nav .navLinks{
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 30px;
+    padding-left: 80px;
     transition: all 0.5s ease;
   }
   nav .navLinks a{
@@ -766,6 +769,9 @@ nav a{
   }
 }
 @media screen and (max-width: 600px) {
+  nav .navLinks{
+    padding-left: 40px;
+  }
   .serviceDiv .helpYou .helpText p{
     width: auto;
   }
