@@ -1,12 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
+import homeImg1 from './assets/homeCat.jpg'
 
 export default function Home() {
 
     return (
         <div className='homeContainer' id='home'>
         <div className='homeContent'>
-          <img src="/assets/homeCat.jpg" alt="Cat" />
+          <img src={homeImg1} alt="Cat" />
           <h1>Your Best Companions</h1>
           <p>Cats, contrary to popular belief, are not solitary creatures. They are 
             capable of forming strong emotional bonds with their human 

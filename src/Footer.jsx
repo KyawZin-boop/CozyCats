@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import footerLogo from './assets/logo.png'
 
 export default function Footer() {
     
@@ -8,7 +9,7 @@ export default function Footer() {
             <div className='footer'>
             <div className='socailLogo'>
                 <div className='socailItems'>
-                <img src="/assets/logo.png" alt="LOGO" />
+                <img src={footerLogo} alt="LOGO" />
                 <div className='contactIcons'>
                     <FontAwesomeIcon icon={faFacebook} />
                     <FontAwesomeIcon icon={faInstagram} />

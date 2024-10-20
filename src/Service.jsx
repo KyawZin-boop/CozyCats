@@ -1,5 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPersonDotsFromLine, faHandHoldingMedical, faPersonChalkboard, faHouseChimneyUser, faAngleRight } from '@fortawesome/free-solid-svg-icons'
+import serviceImg1 from "./assets/serviceDivImg1.jpg"
+import serviceImg2 from "./assets/serviceDivImg2.jpg"
+import serviceImg3 from "./assets/serviceDivImg3.jpg"
 
 export default function Service() {
     
@@ -44,9 +47,9 @@ export default function Service() {
             <button className='shadow-sm'>Explore More <FontAwesomeIcon icon={faAngleRight} className='fs-4 align-middle'/></button>
           </div>
           <div className='helpImages'>
-            <img src="/src/assets/serviceDivImg1.jpg" alt="" className='helpImage1'/>
-            <img src="/src/assets/serviceDivImg2.jpg" alt="" className='helpImage2'/>
-            <img src="/src/assets/serviceDivImg3.jpg" alt="" className='helpImage3'/>
+            <img src={serviceImg1} alt="" className='helpImage1'/>
+            <img src={serviceImg2} alt="" className='helpImage2'/>
+            <img src={serviceImg3} alt="" className='helpImage3'/>
           </div>
         </div>
       </div>
